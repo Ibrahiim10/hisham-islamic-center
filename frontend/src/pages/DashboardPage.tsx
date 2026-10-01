@@ -129,7 +129,7 @@ export function DashboardPage() {
             </span>
           </div>
           <h1 className="mt-1 font-headline-lg text-headline-lg tracking-tight text-on-surface">
-            Assalamu Alaykum, <span className="text-primary-container">{adminName}</span>
+            Assalamu Alaykum,
           </h1>
           <p className="mt-0.5 font-body-md text-body-md text-on-surface-variant">
             Here is what is happening at {BRAND.name} today{' '}
