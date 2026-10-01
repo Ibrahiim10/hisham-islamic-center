@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"tertiary":"#001a1b","primary-fixed":"#c7e9ea","surface-tint":"#446465","tertiary-container":"#003032","outline":"#717878","primary-container":"#0d2f30","on-secondary":"#ffffff","secondary-container":"#fdd2aa","on-primary-container":"#779798","on-primary":"#ffffff","on-tertiary-fixed":"#002021","on-tertiary-container":"#6c999b","tertiary-fixed":"#bcebed","on-primary-fixed-variant":"#2c4c4d","on-error":"#ffffff","on-tertiary-fixed-variant":"#1e4e50","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","on-background":"#0d1c2e","on-secondary-fixed-variant":"#5d4123","on-error-container":"#93000a","on-primary-fixed":"#002021","primary-fixed-dim":"#abcdce","error":"#ba1a1a","inverse-primary":"#abcdce","secondary-fixed-dim":"#e8bf98","on-surface":"#0d1c2e","on-secondary-fixed":"#2c1600","tertiary-fixed-dim":"#a0cfd1","surface-container-highest":"#d5e3fc","outline-variant":"#c1c8c8","surface-container":"#e6eeff","on-surface-variant":"#414848","surface":"#f8f9ff","inverse-surface":"#233144","surface-dim":"#ccdbf3","background":"#f8f9ff","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","secondary":"#785838","primary":"#00191a","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","secondary-fixed":"#ffdcbd","surface-variant":"#d5e3fc","surface-container-high":"#dce9ff","on-secondary-container":"#785939"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.5rem","space-xl":"2rem","space-sm":"0.5rem","margin-mobile":"1rem","margin":"2rem","space-md":"1rem","gutter-mobile":"1rem","gutter":"1.5rem"},"fontFamily":{"label-sm":["Inter"],"label-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"body-lg":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"title-lg":["Plus Jakarta Sans"]},"fontSize":{"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"title-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"24px","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-primary-container z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="px-space-md pt-space-lg pb-space-md border-b border-white/10"><div class="flex items-center gap-space-sm"><img alt="Hisham Islamic Center Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XEMvE53ziLIVFI5AMpemEML81Dw3RAnSTq8rc7b2Qi5UZVqDDHzkoD541e4RQ4t_gVkFCpLhw7HHLJISzJjT4qL3Agw84fCfUE78thGReeDvheJ1b-19AWayh6N7bXANc8gmLiOAy-Za8ESZ6pZIGR0X28VoPfLJdHUD7JTX_SWbkEi2OLoSgRh7C3tF0LVoqMrQ1ko5wNPXrtDnIY_Sl_qgObRTw7n3bUaHBtSesrdecummWYpzjEBA"/><div class="flex flex-col min-w-0"><span class="font-title-sm text-title-sm text-white truncate tracking-tight">Hisham Islamic Center</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider truncate">Madrasa Management</span></div></div></div><nav class="flex-1 px-space-sm py-space-md flex flex-col gap-1" data-active-classes="bg-secondary text-white font-title-sm rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="students" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">school</span><span class="font-body-md text-body-md">Students</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="attendance" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">event_available</span><span class="font-body-md text-body-md">Attendance</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-sm transition-colors group bg-secondary text-white font-title-sm rounded-lg" data-path="fees" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">payments</span><span class="font-body-md text-body-md">Fees</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="quran-and-islamic-learning" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">menu_book</span><span class="font-body-md text-body-md truncate">Qur'an &amp; Learning</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">analytics</span><span class="font-body-md text-body-md">Reports</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">notifications</span><span class="font-body-md text-body-md">Notifications</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">settings</span><span class="font-body-md text-body-md">Settings</span></a></nav></div><div class="p-space-sm border-t border-white/10 flex flex-col gap-space-xs"><div class="px-space-sm py-space-xs bg-tertiary-container/50 rounded-lg flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span><span class="font-label-sm text-label-sm text-white/90 truncate">2024–2025 (Term 2)</span></div><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-white/70 hover:bg-error-container hover:text-on-error-container transition-colors" data-path="logout" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-body-sm text-body-sm font-medium">Sign Out</span></a></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest border-b border-outline-variant/40 z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm min-w-0"><span class="font-title-sm text-title-sm text-on-surface-variant">Madrasa Portal</span><span class="font-label-sm text-outline">/</span><span class="font-title-sm text-title-sm text-on-surface truncate">Academic Session</span></div><div class="flex-1 max-w-lg hidden md:flex items-center relative"><span class="material-symbols-outlined absolute left-3 text-outline text-[20px] pointer-events-none">search</span><input class="w-full h-[38px] pl-10 pr-space-md bg-surface text-on-surface font-body-sm text-body-sm rounded-lg border border-outline-variant/60 focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/15 transition-all" placeholder="Search students, parent phone, M-Pesa ref..." type="text"/></div><div class="flex items-center gap-space-md"><span class="hidden lg:inline-flex items-center px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary-container font-semibold">Term 2 Active</span><button class="relative p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm cursor-pointer hover:bg-surface-container-low p-1.5 rounded-lg transition-colors"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSJdwTqDnyvkJyptSiBQmdJFyzwXRoH6DBA7eaqTCAMQMkDy8ZcODea9Jge87OEu5Rt_qY-LhJXng2827TSau7-JONl4fKe-IQIpaLpOEoeV3TFIcAlGjOdPlReO44isn5o4A1_nTWYZJSppTnoDHmpth-abDUF9vXj5rBssSQodJeoN-BrHmbDrqmaDKRkiInMJHFYQCVtjEwT0vSX6wyz998iS_2hcu78Yk0t7RKefSjiPq3VwGe"/><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Ustadh Abdulrahman</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Chief Administrator</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></header><main class="w-full pt-16 bg-surface"><div class="max-w-7xl mx-auto p-space-lg lg:p-space-xl"><div class="flex flex-col w-full gap-space-lg">
+<!-- Page Header & Key Actions Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-secondary font-label-md text-label-md uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">account_balance_wallet</span>
+<span>Madrasa Treasury • Financial Ledger</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-0.5">Fees &amp; Collections Management</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">October 2024 Billing Cycle • Term 2 (Hijri 1446)</p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="inline-flex items-center gap-space-xs px-space-md h-9 bg-surface-container-high hover:bg-surface-container text-on-surface font-title-sm text-title-sm rounded-lg shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+<span>Export CSV</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md h-9 bg-secondary text-on-secondary hover:bg-on-secondary-container font-title-sm text-title-sm rounded-lg shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">sms</span>
+<span>Send Batch SMS Reminders</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md h-9 bg-primary-container hover:bg-tertiary-container text-on-primary font-title-sm text-title-sm rounded-lg shadow-md hover:shadow-lg transition-all" id="open-payment-modal-btn" type="button">
+<span class="material-symbols-outlined text-[19px]">add_circle</span>
+<span>Record Fee Payment</span>
+</button>
+</div>
+</div>
+<!-- KPI Metric Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Total Collected -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary-container"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total Collected</span>
+<div class="font-headline-lg text-headline-lg text-primary-container font-bold mt-1 tracking-tight">KES 2,688,000</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed/40 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">85.2% of expected revenue</span>
+<span class="text-emerald-700 font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +8.4%
+          </span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 85.2%;"></div>
+</div>
+</div>
+</div>
+<!-- Card 2: Total Outstanding -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total Outstanding</span>
+<div class="font-headline-lg text-headline-lg text-secondary font-bold mt-1 tracking-tight">KES 468,000</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">58 students with pending balance</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-semibold">
+          Follow-up Needed
+        </span>
+</div>
+</div>
+<!-- Card 3: Paid Students -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 right-0 h-1 bg-emerald-600"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Fully Paid Students</span>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1 tracking-tight">424 <span class="text-label-md font-label-md text-on-surface-variant font-normal">/ 482</span></div>
+</div>
+<div class="w-10 h-10 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-700">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Fully cleared for Term 2</span>
+<span class="font-semibold text-emerald-800">88.0% Rate</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-emerald-600 rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+</div>
+<!-- Card 4: Unpaid / Overdue Students -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 left-0 right-0 h-1 bg-error"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Unpaid / Overdue</span>
+<div class="font-headline-lg text-headline-lg text-error font-bold mt-1 tracking-tight">58</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-error-container/60 flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">32 Partial (KES 212k) • 26 Unpaid (KES 256k)</span>
+<button class="text-left font-label-sm text-label-sm text-secondary hover:underline font-semibold flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">send</span> Trigger SMS to 58 Guardians
+        </button>
+</div>
+</div>
+</div>
+<!-- Managed Fee Structures Reference Banner -->
+<div class="bg-surface-container-lowest p-space-md lg:p-space-lg rounded-xl shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container text-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">tune</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm text-on-surface">Term Fee Schedules by Educational Tier</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary-container font-semibold">Active Term 2</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Pre-set monthly billing rates applied to active enrolled cohorts.</p>
+</div>
+</div>
+<!-- Tiers Row -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm flex-1 max-w-3xl">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary-container font-semibold">Tahfidh (Full-time)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">184 Enrolled</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">KES 8,000 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">/mo</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Pot. 1.472M</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary-container font-semibold">Farbar (Part-time)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">216 Enrolled</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">KES 6,000 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">/mo</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Pot. 1.296M</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary-container font-semibold">Women Section</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">82 Enrolled</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">KES 3,000 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">/mo</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Pot. 246K</span>
+</div>
+</div>
+</div>
+<div>
+<button class="w-full lg:w-auto inline-flex items-center justify-center gap-space-xs px-space-md h-9 bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm text-title-sm rounded-lg transition-colors whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[17px]">settings</span>
+<span>Configure Fee Structures</span>
+</button>
+</div>
+</div>
+<!-- Main Fee Table Area -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Filter Header -->
+<div class="p-space-md lg:p-space-lg bg-surface-container-low flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-sm text-title-sm text-on-surface mr-2">Filter Records:</span>
+<!-- Month Filter -->
+<div class="relative">
+<select class="appearance-none h-[38px] pl-space-md pr-8 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 cursor-pointer">
+<option>October 2024</option>
+<option>September 2024</option>
+<option>August 2024</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Year Filter -->
+<div class="relative">
+<select class="appearance-none h-[38px] pl-space-md pr-8 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 cursor-pointer">
+<option>2024 (Hijri 1446)</option>
+<option>2023 (Hijri 1445)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Class Filter -->
+<div class="relative">
+<select class="appearance-none h-[38px] pl-space-md pr-8 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 cursor-pointer" id="class-filter-select">
+<option value="all">All Classes</option>
+<option value="tahfidh">Tahfidh</option>
+<option value="farbar">Farbar</option>
+<option value="women">Women Section</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Status Filter Segmented Controls -->
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-lg shadow-sm text-body-sm">
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-label-md text-label-md" type="button">All (482)</button>
+<button class="px-2.5 py-1 rounded hover:bg-surface-container text-on-surface-variant font-label-md text-label-md" type="button">Paid (424)</button>
+<button class="px-2.5 py-1 rounded hover:bg-surface-container text-on-surface-variant font-label-md text-label-md" type="button">Partial (32)</button>
+<button class="px-2.5 py-1 rounded hover:bg-surface-container text-on-surface-variant font-label-md text-label-md" type="button">Overdue (26)</button>
+</div>
+</div>
+<!-- Search in Table -->
+<div class="relative min-w-[260px]">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full h-[38px] pl-9 pr-space-md bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20" placeholder="Search student or M-Pesa ref..." type="text"/>
+</div>
+</div>
+<!-- Responsive Data Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Student &amp; ID</th>
+<th class="py-space-sm px-space-md">Class &amp; Tier</th>
+<th class="py-space-sm px-space-md text-right">Monthly Fee</th>
+<th class="py-space-sm px-space-md text-right">Amount Paid</th>
+<th class="py-space-sm px-space-md text-right">Balance</th>
+<th class="py-space-sm px-space-md text-center">Status</th>
+<th class="py-space-sm px-space-md">Last Payment / Ref</th>
+<th class="py-space-sm px-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm divide-y divide-surface-container">
+<!-- Row 1: Bilal (Paid) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-fixed/60 text-primary-container flex items-center justify-center font-title-sm text-title-sm shrink-0">
+                  BM
+                </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Bilal Mohamed Amin</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HIC-2024-089</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Tahfidh Level 3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Full-time Boarder</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-medium tabular-nums text-on-surface">KES 8,000</td>
+<td class="py-space-md px-space-md text-right font-semibold tabular-nums text-emerald-800">KES 8,000</td>
+<td class="py-space-md px-space-md text-right tabular-nums text-on-surface-variant">KES 0</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-emerald-50 text-emerald-800 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Fully Paid
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-mono text-primary-container font-semibold">QHK9283JD9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">18 Oct 2024 • M-Pesa</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" title="Download Receipt PDF" type="button">
+<span class="material-symbols-outlined text-[19px]">receipt_long</span>
+</button>
+<button class="p-1.5 rounded text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" title="Print Voucher" type="button">
+<span class="material-symbols-outlined text-[19px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Aisha Yusuf (Partial) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-title-sm text-title-sm shrink-0">
+                  AY
+                </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Aisha Yusuf Noor</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HIC-2024-042</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Women Advanced Hifz</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Women Section (Eve)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-medium tabular-nums text-on-surface">KES 3,000</td>
+<td class="py-space-md px-space-md text-right font-semibold tabular-nums text-on-secondary-container">KES 1,500</td>
+<td class="py-space-md px-space-md text-right font-semibold tabular-nums text-secondary">KES 1,500</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-amber-50 text-amber-800 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Partial
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-mono text-primary-container font-semibold">QGH4192KL2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">12 Oct 2024 • M-Pesa</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded text-secondary hover:text-on-secondary-container hover:bg-secondary-container/40 transition-colors" onclick="openPaymentFor('Aisha Yusuf Noor (HIC-2024-042)', 'Women Section (KES 3,000)', '1500')" title="Record Balance Payment" type="button">
+<span class="material-symbols-outlined text-[19px]">add_card</span>
+</button>
+<button class="p-1.5 rounded text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-colors" title="Send SMS Reminder" type="button">
+<span class="material-symbols-outlined text-[19px]">sms</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Tariq Mansoor (Overdue) -->
+<tr class="hover:bg-surface-container-low transition-colors bg-error-container/10">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-title-sm text-title-sm shrink-0">
+                  TM
+                </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Tariq Mansoor Omar</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HIC-2023-112</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Farbar Grade 4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Afternoon Stream</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-medium tabular-nums text-on-surface">KES 6,000</td>
+<td class="py-space-md px-space-md text-right font-semibold tabular-nums text-on-surface-variant">KES 0</td>
+<td class="py-space-md px-space-md text-right font-bold tabular-nums text-error">KES 6,000</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-red-100 text-red-800 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse"></span> Overdue (18d)
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-mono text-on-surface-variant">—</span>
+<span class="font-label-sm text-label-sm text-error">No Oct Payment</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded text-primary-container hover:bg-surface-container transition-colors" onclick="openPaymentFor('Tariq Mansoor Omar (HIC-2023-112)', 'Farbar (KES 6,000)', '6000')" title="Record Payment" type="button">
+<span class="material-symbols-outlined text-[19px]">payments</span>
+</button>
+<button class="p-1.5 rounded text-error hover:bg-error-container/40 transition-colors" title="Send SMS Notice" type="button">
+<span class="material-symbols-outlined text-[19px]">outgoing_mail</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Zahra Fatima (Paid) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-title-sm text-title-sm shrink-0">
+                  ZF
+                </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Zahra Fatima Al-Hadi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HIC-2024-215</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Tahfidh Level 1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Full-time Boarder</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-medium tabular-nums text-on-surface">KES 8,000</td>
+<td class="py-space-md px-space-md text-right font-semibold tabular-nums text-emerald-800">KES 8,000</td>
+<td class="py-space-md px-space-md text-right tabular-nums text-on-surface-variant">KES 0</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-emerald-50 text-emerald-800 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Fully Paid
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-mono text-primary-container font-semibold">KCB-TR-78219</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14 Oct 2024 • Bank Transfer</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" title="Download Receipt" type="button">
+<span class="material-symbols-outlined text-[19px]">receipt_long</span>
+</button>
+<button class="p-1.5 rounded text-on-surface-variant hover:text-primary-container hover:bg-surface-container transition-colors" title="Print" type="button">
+<span class="material-symbols-outlined text-[19px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Khalid Osman (Partial) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest text-primary-container flex items-center justify-center font-title-sm text-title-sm shrink-0">
+                  KO
+                </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Khalid Osman Ali</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HIC-2023-018</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Farbar Grade 2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Morning Stream</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-medium tabular-nums text-on-surface">KES 6,000</td>
+<td class="py-space-md px-space-md text-right font-semibold tabular-nums text-on-secondary-container">KES 4,000</td>
+<td class="py-space-md px-space-md text-right font-semibold tabular-nums text-secondary">KES 2,000</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-amber-50 text-amber-800 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Partial
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-mono text-primary-container font-semibold">QJE1094XX8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">09 Oct 2024 • M-Pesa</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded text-secondary hover:text-on-secondary-container hover:bg-secondary-container/40 transition-colors" onclick="openPaymentFor('Khalid Osman Ali (HIC-2023-018)', 'Farbar (KES 6,000)', '2000')" title="Record Balance" type="button">
+<span class="material-symbols-outlined text-[19px]">add_card</span>
+</button>
+<button class="p-1.5 rounded text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-colors" title="SMS Alert" type="button">
+<span class="material-symbols-outlined text-[19px]">sms</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Maryam Abdullahi (Unpaid) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-error-container/50 text-on-error-container flex items-center justify-center font-title-sm text-title-sm shrink-0">
+                  MA
+                </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Maryam Abdullahi Qasim</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HIC-2024-301</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Women Tajweed Intro</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Women Section (Weekend)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right font-medium tabular-nums text-on-surface">KES 3,000</td>
+<td class="py-space-md px-space-md text-right font-semibold tabular-nums text-on-surface-variant">KES 0</td>
+<td class="py-space-md px-space-md text-right font-bold tabular-nums text-error">KES 3,000</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-red-50 text-red-700 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-red-400"></span> Unpaid
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-mono text-on-surface-variant">—</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pending Payment</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded text-primary-container hover:bg-surface-container transition-colors" onclick="openPaymentFor('Maryam Abdullahi Qasim (HIC-2024-301)', 'Women Section (KES 3,000)', '3000')" title="Record Payment" type="button">
+<span class="material-symbols-outlined text-[19px]">payments</span>
+</button>
+<button class="p-1.5 rounded text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-colors" title="Send SMS Reminder" type="button">
+<span class="material-symbols-outlined text-[19px]">sms</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Footer Ledger Status -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-sm border-t border-surface-container">
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+        Showing <span class="font-semibold text-on-surface">1 – 6</span> of <span class="font-semibold text-on-surface">482</span> students across 3 program tiers
+      </div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors" disabled="" type="button">Previous</button>
+<span class="px-space-sm py-1 rounded bg-primary-container text-on-primary font-label-md text-label-md">1</span>
+<button class="px-space-sm py-1 rounded hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">2</button>
+<button class="px-space-sm py-1 rounded hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">3</button>
+<span class="px-1 text-on-surface-variant font-label-md text-label-md">…</span>
+<button class="px-space-sm py-1 rounded hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" type="button">81</button>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">Next</button>
+</div>
+</div>
+</div>
+<!-- Screen 9: Record Payment Modal / Flyout Panel -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-md bg-primary-container/50 backdrop-blur-sm hidden" id="payment-modal">
+<div class="bg-surface-container-lowest w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[942px] animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="bg-primary-container px-space-lg py-space-md text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-tertiary-container text-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">receipt</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-white font-bold leading-tight">Record Fee Payment</h2>
+<p class="font-label-sm text-label-sm text-on-primary-container">Madrasa Financial Ledger • Screen 9 Form</p>
+</div>
+</div>
+<button class="p-1 rounded-lg text-white/70 hover:text-white hover:bg-white/10 transition-colors" id="close-payment-modal-btn" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- Modal Body (Scrollable form) -->
+<form class="p-space-lg overflow-y-auto flex flex-col gap-space-md" id="record-fee-form">
+<!-- Student Selector Searchable -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Student Name &amp; Registration ID <span class="text-error">*</span></label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-primary-container text-[19px]">person_search</span>
+<input class="w-full h-[40px] pl-10 pr-space-md bg-surface text-on-surface font-body-md text-body-md rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/25" id="form-student-input" required="" type="text" value="Bilal Mohamed Amin (HIC-2024-089)"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Parent/Guardian: Mohamed Amin (‎+254 712 345 678)</span>
+</div>
+<!-- Grid 2-col: Month/Year & Class Tier -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Academic Month &amp; Year <span class="text-error">*</span></label>
+<div class="relative">
+<select class="appearance-none w-full h-[38px] px-space-md bg-surface text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20">
+<option selected="">October 2024 (Term 2)</option>
+<option>November 2024 (Term 2)</option>
+<option>December 2024 (Term 2)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant pointer-events-none text-[18px]">calendar_month</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Class / Monthly Tier Rate</label>
+<input class="h-[38px] px-space-md bg-surface-container text-on-surface-variant font-body-sm text-body-sm rounded-lg cursor-not-allowed select-none" id="form-class-input" readonly="" type="text" value="Tahfidh (KES 8,000)"/>
+</div>
+</div>
+<!-- Amount Paid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Amount Paid (KES) <span class="text-error">*</span></label>
+<div class="relative">
+<span class="absolute left-3 top-2.5 font-label-md text-label-md font-bold text-on-surface-variant">KES</span>
+<input class="w-full h-[38px] pl-12 pr-space-md bg-surface text-on-surface font-headline-md text-headline-md font-bold rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/25" id="form-amount-input" min="100" required="" step="50" type="number" value="8000"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Payment Date <span class="text-error">*</span></label>
+<div class="relative">
+<input class="w-full h-[38px] px-space-md bg-surface text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20" required="" type="date" value="2024-10-18"/>
+</div>
+</div>
+</div>
+<!-- Payment Method Segmented Tabs -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Payment Method <span class="text-error">*</span></label>
+<div class="grid grid-cols-3 gap-space-sm" id="payment-method-selector">
+<label class="flex items-center justify-center gap-2 p-2 rounded-lg bg-emerald-50 text-emerald-900 cursor-pointer shadow-sm">
+<input checked="" class="accent-emerald-700 w-4 h-4" name="payment_method" type="radio" value="mpesa"/>
+<span class="font-title-sm text-title-sm font-semibold">M-Pesa</span>
+</label>
+<label class="flex items-center justify-center gap-2 p-2 rounded-lg bg-surface-container text-on-surface cursor-pointer hover:bg-surface-container-high transition-colors">
+<input class="accent-primary-container w-4 h-4" name="payment_method" type="radio" value="bank"/>
+<span class="font-title-sm text-title-sm font-medium">Bank Transfer</span>
+</label>
+<label class="flex items-center justify-center gap-2 p-2 rounded-lg bg-surface-container text-on-surface cursor-pointer hover:bg-surface-container-high transition-colors">
+<input class="accent-primary-container w-4 h-4" name="payment_method" type="radio" value="cash"/>
+<span class="font-title-sm text-title-sm font-medium">Cash Ledger</span>
+</label>
+</div>
+</div>
+<!-- M-Pesa Verification Section -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">M-Pesa Transaction Reference <span class="text-error">*</span></label>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-emerald-700 bg-emerald-100/70 px-2 py-0.5 rounded-full font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span> Safaricom Daraja API Active
+            </span>
+</div>
+<div class="flex gap-space-xs">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">receipt_long</span>
+<input class="w-full h-[38px] pl-10 pr-space-md uppercase font-mono font-bold bg-surface-container-lowest text-primary-container rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 tracking-wider" id="form-mpesa-ref" placeholder="e.g. QHK9283JD9" type="text" value="QHK9283JD9"/>
+</div>
+<button class="px-space-md h-[38px] bg-emerald-700 hover:bg-emerald-800 text-white font-title-sm text-title-sm rounded-lg shadow-sm flex items-center gap-1 transition-colors whitespace-nowrap" id="verify-daraja-btn" type="button">
+<span class="material-symbols-outlined text-[17px]">verified</span>
+<span>Verify</span>
+</button>
+</div>
+<p class="font-label-sm text-label-sm text-emerald-800 flex items-center gap-1" id="verification-status">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+            Verified: Received from MOHAMED AMIN KES 8,000 on 18/10/2024 at 10:41 AM.
+          </p>
+</div>
+<!-- Internal Audit Notes -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Accounting Note / Receipt Memo</label>
+<input class="h-[38px] px-space-md bg-surface text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20" type="text" value="Term 2 Month 2 installment cleared via Paybill 400200"/>
+</div>
+<!-- SMS Receipt Notification Checkbox -->
+<label class="flex items-center gap-space-sm p-space-sm bg-surface-container rounded-lg cursor-pointer">
+<input checked="" class="w-4 h-4 accent-primary-container rounded" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Send Instant SMS Confirmation &amp; Digital Receipt</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sends payment breakdown and remaining balance to parent phone (+254 712 345 678)</span>
+</div>
+</label>
+<!-- Form Submission Footer Actions -->
+<div class="pt-space-sm flex items-center justify-end gap-space-sm">
+<button class="px-space-lg h-10 bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm text-title-sm rounded-lg transition-colors" id="cancel-payment-modal-btn" type="button">
+            Cancel
+          </button>
+<button class="px-space-xl h-10 bg-primary-container hover:bg-tertiary-container text-on-primary font-title-sm text-title-sm rounded-lg shadow-md hover:shadow-lg transition-all flex items-center gap-space-xs" type="submit">
+<span class="material-symbols-outlined text-[19px]">done_all</span>
+<span>Confirm &amp; Generate Receipt</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 bg-primary-container text-on-primary px-space-lg py-space-md rounded-xl shadow-xl flex items-center gap-space-sm hidden transform transition-all duration-300" id="toast-message">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">verified</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-white font-semibold">Payment Recorded Successfully</span>
+<span class="font-body-sm text-body-sm text-on-primary-container" id="toast-body">Receipt generated and SMS notification queued.</span>
+</div>
+</div>
+</div>
+<script>
+  // Modal toggle behavior
+  const modal = document.getElementById('payment-modal');
+  const openBtn = document.getElementById('open-payment-modal-btn');
+  const closeBtn = document.getElementById('close-payment-modal-btn');
+  const cancelBtn = document.getElementById('cancel-payment-modal-btn');
+  const recordForm = document.getElementById('record-fee-form');
+  const toast = document.getElementById('toast-message');
+  const verifyDarajaBtn = document.getElementById('verify-daraja-btn');
+  const verificationStatus = document.getElementById('verification-status');
+
+  function openModal() {
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  openBtn.addEventListener('click', openModal);
+  closeBtn.addEventListener('click', closeModal);
+  cancelBtn.addEventListener('click', closeModal);
+
+  // Close modal when clicking on dark backdrop
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  // Dynamic invocation from table rows
+  window.openPaymentFor = function(studentName, classTier, balanceAmt) {
+    document.getElementById('form-student-input').value = studentName;
+    document.getElementById('form-class-input').value = classTier;
+    document.getElementById('form-amount-input').value = balanceAmt;
+    document.getElementById('form-mpesa-ref').value = 'QHK' + Math.floor(100000 + Math.random() * 900000);
+    openModal();
+  };
+
+  // Safaricom Daraja mock verification micro-interaction
+  verifyDarajaBtn.addEventListener('click', () => {
+    const ref = document.getElementById('form-mpesa-ref').value.trim();
+    if (!ref) {
+      alert('Please enter an M-Pesa reference code');
+      return;
+    }
+    verifyDarajaBtn.innerHTML = '<span class="material-symbols-outlined text-[17px] animate-spin">refresh</span> Verifying...';
+    setTimeout(() => {
+      verifyDarajaBtn.innerHTML = '<span class="material-symbols-outlined text-[17px]">verified</span> Verified';
+      verificationStatus.classList.remove('hidden');
+      verificationStatus.innerHTML = '<span class="material-symbols-outlined text-[15px]">check_circle</span> Verified: Safaricom confirms ' + ref + ' has cleared to Madrasa Paybill.';
+    }, 600);
+  });
+
+  // Handle Form Submission
+  recordForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const student = document.getElementById('form-student-input').value;
+    const amount = document.getElementById('form-amount-input').value;
+
+    closeModal();
+
+    // Show confirmation Toast
+    document.getElementById('toast-body').textContent = 'KES ' + Number(amount).toLocaleString() + ' recorded for ' + student + '.';
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 4500);
+  });
+</script></div></main></div></body></html>

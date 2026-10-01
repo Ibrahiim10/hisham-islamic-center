@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply min-h-full;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-surface font-body-md text-on-surface antialiased;
+  }
+
+  #root {
+    @apply min-w-0;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+}
+
+@media print {
+  body.printing-reports aside,
+  body.printing-reports header,
+  body.printing-reports .reports-no-print {
+    display: none !important;
+  }
+
+  body.printing-reports main {
+    padding: 0 !important;
+  }
+}

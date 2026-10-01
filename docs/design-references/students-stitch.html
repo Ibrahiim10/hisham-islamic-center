@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"tertiary":"#001a1b","primary-fixed":"#c7e9ea","surface-tint":"#446465","tertiary-container":"#003032","outline":"#717878","primary-container":"#0d2f30","on-secondary":"#ffffff","secondary-container":"#fdd2aa","on-primary-container":"#779798","on-primary":"#ffffff","on-tertiary-fixed":"#002021","on-tertiary-container":"#6c999b","tertiary-fixed":"#bcebed","on-primary-fixed-variant":"#2c4c4d","on-error":"#ffffff","on-tertiary-fixed-variant":"#1e4e50","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","on-background":"#0d1c2e","on-secondary-fixed-variant":"#5d4123","on-error-container":"#93000a","on-primary-fixed":"#002021","primary-fixed-dim":"#abcdce","error":"#ba1a1a","inverse-primary":"#abcdce","secondary-fixed-dim":"#e8bf98","on-surface":"#0d1c2e","on-secondary-fixed":"#2c1600","tertiary-fixed-dim":"#a0cfd1","surface-container-highest":"#d5e3fc","outline-variant":"#c1c8c8","surface-container":"#e6eeff","on-surface-variant":"#414848","surface":"#f8f9ff","inverse-surface":"#233144","surface-dim":"#ccdbf3","background":"#f8f9ff","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","secondary":"#785838","primary":"#00191a","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","secondary-fixed":"#ffdcbd","surface-variant":"#d5e3fc","surface-container-high":"#dce9ff","on-secondary-container":"#785939"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.5rem","space-xl":"2rem","space-sm":"0.5rem","margin-mobile":"1rem","margin":"2rem","space-md":"1rem","gutter-mobile":"1rem","gutter":"1.5rem"},"fontFamily":{"label-sm":["Inter"],"label-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"body-lg":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"title-lg":["Plus Jakarta Sans"]},"fontSize":{"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"title-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"24px","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-primary-container z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="px-space-md pt-space-lg pb-space-md border-b border-white/10"><div class="flex items-center gap-space-sm"><img alt="Hisham Islamic Center Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XEMvE53ziLIVFI5AMpemEML81Dw3RAnSTq8rc7b2Qi5UZVqDDHzkoD541e4RQ4t_gVkFCpLhw7HHLJISzJjT4qL3Agw84fCfUE78thGReeDvheJ1b-19AWayh6N7bXANc8gmLiOAy-Za8ESZ6pZIGR0X28VoPfLJdHUD7JTX_SWbkEi2OLoSgRh7C3tF0LVoqMrQ1ko5wNPXrtDnIY_Sl_qgObRTw7n3bUaHBtSesrdecummWYpzjEBA"/><div class="flex flex-col min-w-0"><span class="font-title-sm text-title-sm text-white truncate tracking-tight">Hisham Islamic Center</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider truncate">Madrasa Management</span></div></div></div><nav class="flex-1 px-space-sm py-space-md flex flex-col gap-1" data-active-classes="bg-secondary text-white font-title-sm rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-sm transition-colors group bg-secondary text-white font-title-sm rounded-lg" data-path="students" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">school</span><span class="font-body-md text-body-md">Students</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="attendance" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">event_available</span><span class="font-body-md text-body-md">Attendance</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="fees" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">payments</span><span class="font-body-md text-body-md">Fees</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="quran-and-islamic-learning" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">menu_book</span><span class="font-body-md text-body-md truncate">Qur'an &amp; Learning</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">analytics</span><span class="font-body-md text-body-md">Reports</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">notifications</span><span class="font-body-md text-body-md">Notifications</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">settings</span><span class="font-body-md text-body-md">Settings</span></a></nav></div><div class="p-space-sm border-t border-white/10 flex flex-col gap-space-xs"><div class="px-space-sm py-space-xs bg-tertiary-container/50 rounded-lg flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span><span class="font-label-sm text-label-sm text-white/90 truncate">2024–2025 (Term 2)</span></div><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-white/70 hover:bg-error-container hover:text-on-error-container transition-colors" data-path="logout" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-body-sm text-body-sm font-medium">Sign Out</span></a></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest border-b border-outline-variant/40 z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm min-w-0"><span class="font-title-sm text-title-sm text-on-surface-variant">Madrasa Portal</span><span class="font-label-sm text-outline">/</span><span class="font-title-sm text-title-sm text-on-surface truncate">Academic Session</span></div><div class="flex-1 max-w-lg hidden md:flex items-center relative"><span class="material-symbols-outlined absolute left-3 text-outline text-[20px] pointer-events-none">search</span><input class="w-full h-[38px] pl-10 pr-space-md bg-surface text-on-surface font-body-sm text-body-sm rounded-lg border border-outline-variant/60 focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/15 transition-all" placeholder="Search students, parent phone, M-Pesa ref..." type="text"/></div><div class="flex items-center gap-space-md"><span class="hidden lg:inline-flex items-center px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary-container font-semibold">Term 2 Active</span><button class="relative p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm cursor-pointer hover:bg-surface-container-low p-1.5 rounded-lg transition-colors"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSJdwTqDnyvkJyptSiBQmdJFyzwXRoH6DBA7eaqTCAMQMkDy8ZcODea9Jge87OEu5Rt_qY-LhJXng2827TSau7-JONl4fKe-IQIpaLpOEoeV3TFIcAlGjOdPlReO44isn5o4A1_nTWYZJSppTnoDHmpth-abDUF9vXj5rBssSQodJeoN-BrHmbDrqmaDKRkiInMJHFYQCVtjEwT0vSX6wyz998iS_2hcu78Yk0t7RKefSjiPq3VwGe"/><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Ustadh Abdulrahman</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Chief Administrator</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></header><main class="w-full pt-16 bg-surface"><div class="max-w-7xl mx-auto p-space-lg lg:p-space-xl"><div class="flex flex-col w-full relative">
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">Admin</span>
+<span class="font-label-sm text-label-sm text-outline-variant font-semibold">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">Students</span>
+<span class="font-label-sm text-label-sm text-outline-variant font-semibold">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">All Active Enrollees</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Students Directory</h1>
+<span class="font-label-md text-label-md px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-semibold">Term 2 Ledger</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md h-9 rounded-lg bg-surface-container-lowest text-on-surface font-title-sm text-body-sm shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">file_download</span>
+        Export Register
+      </button>
+<button class="inline-flex items-center gap-space-xs px-space-md h-9 rounded-lg bg-surface-container-lowest text-on-surface font-title-sm text-body-sm shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">tune</span>
+        Columns
+      </button>
+<button class="inline-flex items-center gap-space-xs px-space-lg h-9 rounded-lg bg-primary-container text-on-primary font-title-sm text-body-sm shadow-md hover:bg-tertiary-container transition-all" id="open-register-modal-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+        + Add New Student
+      </button>
+</div>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-x-space-lg gap-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="text-on-surface font-semibold">Total Students:</span>
+<span class="font-title-sm text-on-surface font-bold">482</span>
+</div>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<div class="flex items-center gap-space-xs">
+<span class="text-on-surface-variant font-medium">Tahfidh (Full-time):</span>
+<span class="font-semibold text-on-surface">184</span>
+</div>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<div class="flex items-center gap-space-xs">
+<span class="text-on-surface-variant font-medium">Farbar (Part-time):</span>
+<span class="font-semibold text-on-surface">216</span>
+</div>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<div class="flex items-center gap-space-xs">
+<span class="text-on-surface-variant font-medium">Women Section:</span>
+<span class="font-semibold text-on-surface">82</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pl-0 lg:pl-space-md pt-space-xs lg:pt-0">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">male</span>
+<span>Male: <strong class="text-on-surface font-semibold">278</strong></span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">female</span>
+<span>Female: <strong class="text-on-surface font-semibold">204</strong></span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm mb-space-md">
+<div class="md:col-span-6 relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px] pointer-events-none">search</span>
+<input class="w-full h-10 pl-10 pr-space-md bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all placeholder:text-outline" id="search-input" placeholder="Search by name, Reg No, or parent phone..." type="text"/>
+</div>
+<div class="md:col-span-3">
+<div class="relative">
+<select class="w-full h-10 pl-space-md pr-8 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all appearance-none cursor-pointer">
+<option value="">All Classes</option>
+<option value="Tahfidh">Tahfidh (Full-time)</option>
+<option value="Farbar">Farbar (Part-time)</option>
+<option value="Women">Women Section</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-outline text-[20px] pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+<div class="md:col-span-3">
+<div class="relative">
+<select class="w-full h-10 pl-space-md pr-8 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all appearance-none cursor-pointer">
+<option value="">All Statuses</option>
+<option value="Active">Active</option>
+<option value="Suspended">Suspended</option>
+<option value="Alumni">Alumni</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-outline text-[20px] pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col mb-space-lg">
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[1020px]">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm pl-space-lg pr-space-sm font-semibold">Student Name &amp; ID</th>
+<th class="py-space-sm px-space-sm font-semibold">Gender</th>
+<th class="py-space-sm px-space-sm font-semibold">Class / Section</th>
+<th class="py-space-sm px-space-sm font-semibold">Parent Contact &amp; M-Pesa</th>
+<th class="py-space-sm px-space-sm font-semibold">Qur'an Progress</th>
+<th class="py-space-sm px-space-sm font-semibold">Fee Status</th>
+<th class="py-space-sm px-space-sm font-semibold text-center">Status</th>
+<th class="py-space-sm pr-space-lg pl-space-sm font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm font-body-sm">
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md pl-space-lg pr-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary font-title-sm flex items-center justify-center shrink-0">
+                  BM
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-body-md text-on-surface font-semibold tracking-tight">Bilal Mohamed Amin</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HIC-2024-089</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-on-surface font-medium">Male</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-high text-primary-container">
+                Tahfidh (Full-time)
+              </span>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="font-mono text-body-sm">+254 712 345 678</span>
+<a class="p-1 rounded text-secondary hover:bg-surface-container-high transition-colors" href="#" title="WhatsApp Parent">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface truncate">Juz 18 · Al-Kahf</span>
+<span class="text-on-surface-variant font-mono">60%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 60%;"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-emerald-50 text-emerald-800">
+                Paid
+              </span>
+</td>
+<td class="py-space-md px-space-sm text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-emerald-700 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Active
+              </span>
+</td>
+<td class="py-space-md pr-space-lg pl-space-sm text-right">
+<div class="inline-flex items-center gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Student" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded hover:text-error hover:bg-error-container/40 transition-colors" title="Actions" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest/40">
+<td class="py-space-md pl-space-lg pr-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary font-title-sm flex items-center justify-center shrink-0">
+                  FZ
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-body-md text-on-surface font-semibold tracking-tight">Fatima Zahra Al-Husseini</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HIC-2024-114</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-on-surface font-medium">Female</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-high text-secondary">
+                Women Section
+              </span>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="font-mono text-body-sm">+254 722 987 654</span>
+<a class="p-1 rounded text-secondary hover:bg-surface-container-high transition-colors" href="#" title="WhatsApp Parent">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface truncate">Juz 5 · An-Nisa</span>
+<span class="text-on-surface-variant font-mono">16%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 16%;"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-emerald-50 text-emerald-800">
+                Paid
+              </span>
+</td>
+<td class="py-space-md px-space-sm text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-emerald-700 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Active
+              </span>
+</td>
+<td class="py-space-md pr-space-lg pl-space-sm text-right">
+<div class="inline-flex items-center gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Student" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded hover:text-error hover:bg-error-container/40 transition-colors" title="Actions" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md pl-space-lg pr-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary font-title-sm flex items-center justify-center shrink-0">
+                  IH
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-body-md text-on-surface font-semibold tracking-tight">Ibrahim Hassan Noor</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HIC-2024-032</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-on-surface font-medium">Male</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-high text-primary-container">
+                Farbar (Part-time)
+              </span>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="font-mono text-body-sm">+254 733 112 233</span>
+<a class="p-1 rounded text-secondary hover:bg-surface-container-high transition-colors" href="#" title="WhatsApp Parent">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface truncate">Juz 9 · Al-A'raf</span>
+<span class="text-on-surface-variant font-mono">30%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 30%;"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-amber-50 text-amber-800">
+                Partial
+              </span>
+</td>
+<td class="py-space-md px-space-sm text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-emerald-700 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Active
+              </span>
+</td>
+<td class="py-space-md pr-space-lg pl-space-sm text-right">
+<div class="inline-flex items-center gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Student" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded hover:text-error hover:bg-error-container/40 transition-colors" title="Actions" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest/40">
+<td class="py-space-md pl-space-lg pr-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary font-title-sm flex items-center justify-center shrink-0">
+                  MA
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-body-md text-on-surface font-semibold tracking-tight">Maryam Abdullahi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HIC-2024-155</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-on-surface font-medium">Female</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-high text-secondary">
+                Women Section
+              </span>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="font-mono text-body-sm">+254 701 445 566</span>
+<a class="p-1 rounded text-secondary hover:bg-surface-container-high transition-colors" href="#" title="WhatsApp Parent">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface truncate">Juz 2 · Al-Baqarah</span>
+<span class="text-on-surface-variant font-mono">7%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 7%;"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-red-50 text-red-800">
+                Unpaid
+              </span>
+</td>
+<td class="py-space-md px-space-sm text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-emerald-700 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Active
+              </span>
+</td>
+<td class="py-space-md pr-space-lg pl-space-sm text-right">
+<div class="inline-flex items-center gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Student" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded hover:text-error hover:bg-error-container/40 transition-colors" title="Actions" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md pl-space-lg pr-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary font-title-sm flex items-center justify-center shrink-0">
+                  YM
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-body-md text-on-surface font-semibold tracking-tight">Yusuf Tariq Mansoor</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HIC-2024-210</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-on-surface font-medium">Male</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-high text-primary-container">
+                Tahfidh (Full-time)
+              </span>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="font-mono text-body-sm">+254 720 889 900</span>
+<a class="p-1 rounded text-secondary hover:bg-surface-container-high transition-colors" href="#" title="WhatsApp Parent">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface truncate">Juz 27 · Ar-Rahman</span>
+<span class="text-on-surface-variant font-mono">90%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 90%;"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-emerald-50 text-emerald-800">
+                Paid
+              </span>
+</td>
+<td class="py-space-md px-space-sm text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-emerald-700 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Active
+              </span>
+</td>
+<td class="py-space-md pr-space-lg pl-space-sm text-right">
+<div class="inline-flex items-center gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Student" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded hover:text-error hover:bg-error-container/40 transition-colors" title="Actions" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest/40">
+<td class="py-space-md pl-space-lg pr-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary font-title-sm flex items-center justify-center shrink-0">
+                  KO
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-body-md text-on-surface font-semibold tracking-tight">Khadijah Omar</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HIC-2024-045</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-on-surface font-medium">Female</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-high text-primary-container">
+                Farbar (Part-time)
+              </span>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="font-mono text-body-sm">+254 711 778 899</span>
+<a class="p-1 rounded text-secondary hover:bg-surface-container-high transition-colors" href="#" title="WhatsApp Parent">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface truncate">Juz 12 · Yusuf</span>
+<span class="text-on-surface-variant font-mono">40%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 40%;"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-emerald-50 text-emerald-800">
+                Paid
+              </span>
+</td>
+<td class="py-space-md px-space-sm text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-emerald-700 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Active
+              </span>
+</td>
+<td class="py-space-md pr-space-lg pl-space-sm text-right">
+<div class="inline-flex items-center gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Student" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded hover:text-error hover:bg-error-container/40 transition-colors" title="Actions" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md pl-space-lg pr-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary font-title-sm flex items-center justify-center shrink-0">
+                  HK
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-body-md text-on-surface font-semibold tracking-tight">Hamza Khalid</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HIC-2024-301</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm text-on-surface font-medium">Male</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium bg-surface-container-high text-primary-container">
+                Tahfidh (Full-time)
+              </span>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="font-mono text-body-sm">+254 798 223 344</span>
+<a class="p-1 rounded text-secondary hover:bg-surface-container-high transition-colors" href="#" title="WhatsApp Parent">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col gap-1 w-44">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface truncate">Juz 3 · Ali 'Imran</span>
+<span class="text-on-surface-variant font-mono">10%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 10%;"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-red-50 text-red-800">
+                Overdue
+              </span>
+</td>
+<td class="py-space-md px-space-sm text-center">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-emerald-700 font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Active
+              </span>
+</td>
+<td class="py-space-md pr-space-lg pl-space-sm text-right">
+<div class="inline-flex items-center gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="View Profile" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded hover:text-on-surface hover:bg-surface-container transition-colors" title="Edit Student" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded hover:text-error hover:bg-error-container/40 transition-colors" title="Actions" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-md bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm border-t-0">
+<div class="flex items-center gap-space-sm">
+<span>Showing <strong class="text-on-surface font-semibold">1</strong> to <strong class="text-on-surface font-semibold">7</strong> of <strong class="text-on-surface font-semibold">482</strong> students</span>
+<span class="hidden sm:inline text-outline-variant">|</span>
+<div class="hidden sm:flex items-center gap-1">
+<span class="text-label-sm font-label-sm">Rows per page:</span>
+<select class="h-7 px-2 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded focus:outline-none cursor-pointer">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:bg-surface-container hover:text-on-surface disabled:opacity-40 transition-colors" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary-container text-on-primary font-title-sm text-label-md" type="button">1</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container font-label-md transition-colors" type="button">2</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container font-label-md transition-colors" type="button">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container font-label-md transition-colors" type="button">69</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 bg-primary-container/45 z-50 backdrop-blur-[2px] opacity-0 pointer-events-none transition-opacity duration-300" id="registration-drawer-backdrop"></div>
+<aside class="fixed top-0 right-0 h-full w-full max-w-[540px] bg-surface-container-lowest shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between" id="registration-drawer">
+<div class="flex flex-col flex-1 overflow-y-auto">
+<div class="p-space-lg bg-surface-container-low flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Student Admission</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary text-white font-semibold">New Entry</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Register student for Academic Year 2024–2025, Term 2</span>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" id="close-drawer-btn" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<form class="p-space-lg flex flex-col gap-space-md" id="student-admission-form">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5 sm:col-span-2">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+              Full Legal Name <span class="text-error font-normal text-label-sm">*Required</span>
+</label>
+<input class="h-[38px] px-space-md bg-surface text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all placeholder:text-outline" placeholder="e.g. Zayd Ibrahim Al-Farooq" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+              Registration Number
+              <span class="font-label-sm text-label-sm text-secondary font-semibold">Auto</span>
+</label>
+<input class="h-[38px] px-space-md bg-surface-container-high text-on-surface font-mono text-body-sm rounded-lg font-semibold cursor-not-allowed select-all" readonly="" type="text" value="HIC-2024-483"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Gender</label>
+<div class="grid grid-cols-2 gap-2 h-[38px]">
+<label class="flex items-center justify-center gap-2 px-space-sm rounded-lg bg-surface hover:bg-surface-container-high cursor-pointer transition-colors text-body-sm font-medium">
+<input checked="" class="accent-primary-container" name="gender" type="radio" value="male"/>
+<span>Male</span>
+</label>
+<label class="flex items-center justify-center gap-2 px-space-sm rounded-lg bg-surface hover:bg-surface-container-high cursor-pointer transition-colors text-body-sm font-medium">
+<input class="accent-primary-container" name="gender" type="radio" value="female"/>
+<span>Female</span>
+</label>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Date of Birth</label>
+<input class="h-[38px] px-space-md bg-surface text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all" type="date" value="2012-05-14"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Admission Date</label>
+<input class="h-[38px] px-space-md bg-surface text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all" type="date" value="2024-09-02"/>
+</div>
+<div class="flex flex-col gap-1.5 sm:col-span-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Parent / Guardian Phone</label>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[14px]">smartphone</span> M-Pesa Enabled
+              </span>
+</div>
+<div class="relative">
+<span class="absolute left-3 top-2 text-outline font-mono text-body-sm">+254</span>
+<input class="w-full h-[38px] pl-16 pr-space-md bg-surface text-on-surface font-mono text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all placeholder:text-outline" placeholder="7XX XXX XXX" type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 sm:col-span-2">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Residential Address / Estate</label>
+<input class="h-[38px] px-space-md bg-surface text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all placeholder:text-outline" placeholder="e.g. South C, Ole Shapara Ave, Nairobi" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5 sm:col-span-2">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Class Enrollment &amp; Fee Tariff</label>
+<div class="relative">
+<select class="w-full h-[38px] pl-space-md pr-8 bg-surface text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all appearance-none cursor-pointer">
+<option value="Tahfidh">Tahfidh Program — KES 8,000 / month</option>
+<option value="Farbar">Farbar (Part-time) — KES 6,000 / month</option>
+<option value="Women">Women Section — KES 3,000 / month</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2 text-outline text-[20px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Student Boarding Type</label>
+<div class="relative">
+<select class="w-full h-[38px] pl-space-md pr-8 bg-surface text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all appearance-none cursor-pointer">
+<option>Full-time Boarder</option>
+<option selected="">Day Scholar</option>
+<option>Weekend Only</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2 text-outline text-[20px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Initial Qur'an Level</label>
+<div class="relative">
+<select class="w-full h-[38px] pl-space-md pr-8 bg-surface text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all appearance-none cursor-pointer">
+<option>Qa'idah Nooraniyah (Beginner)</option>
+<option selected="">Juz 30 ('Amma)</option>
+<option>Juz 1 – 5</option>
+<option>Juz 6 – 15</option>
+<option>Juz 16 – 29</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2 text-outline text-[20px] pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-high/60 flex items-start gap-space-sm mt-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary-container">info</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-label-md text-primary-container">Automatic Registration Protocol</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Saving sends an SMS admission confirmation and M-Pesa tuition paybill receipt directly to the primary guardian's registered number.</span>
+</div>
+</div>
+</form>
+</div>
+<div class="p-space-lg bg-surface-container-low flex items-center justify-end gap-space-sm border-t-0">
+<button class="px-space-md h-10 rounded-lg bg-surface text-on-surface font-title-sm text-body-sm hover:bg-surface-container transition-colors" id="cancel-drawer-btn" type="button">
+        Cancel
+      </button>
+<button class="px-space-xl h-10 rounded-lg bg-primary-container text-on-primary font-title-sm text-body-sm shadow-md hover:bg-tertiary-container transition-all flex items-center gap-space-xs" form="student-admission-form" type="submit">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+        Save Student
+      </button>
+</div>
+</aside>
+<script>
+    (function initDirectoryInteractions() {
+      const openModalBtn = document.getElementById('open-register-modal-btn');
+      const closeModalBtn = document.getElementById('close-drawer-btn');
+      const cancelDrawerBtn = document.getElementById('cancel-drawer-btn');
+      const drawer = document.getElementById('registration-drawer');
+      const backdrop = document.getElementById('registration-drawer-backdrop');
+
+      function openDrawer() {
+        if (!drawer || !backdrop) return;
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100', 'pointer-events-auto');
+        drawer.classList.remove('translate-x-full');
+        drawer.classList.add('translate-x-0');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeDrawer() {
+        if (!drawer || !backdrop) return;
+        drawer.classList.remove('translate-x-0');
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        document.body.style.overflow = '';
+      }
+
+      if (openModalBtn) openModalBtn.addEventListener('click', openDrawer);
+      if (closeModalBtn) closeModalBtn.addEventListener('click', closeDrawer);
+      if (cancelDrawerBtn) cancelDrawerBtn.addEventListener('click', closeDrawer);
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && drawer && drawer.classList.contains('translate-x-0')) {
+          closeDrawer();
+        }
+      });
+    })();
+  </script>
+</div></div></main></div></body></html>

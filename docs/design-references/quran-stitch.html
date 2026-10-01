@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"tertiary":"#001a1b","primary-fixed":"#c7e9ea","surface-tint":"#446465","tertiary-container":"#003032","outline":"#717878","primary-container":"#0d2f30","on-secondary":"#ffffff","secondary-container":"#fdd2aa","on-primary-container":"#779798","on-primary":"#ffffff","on-tertiary-fixed":"#002021","on-tertiary-container":"#6c999b","tertiary-fixed":"#bcebed","on-primary-fixed-variant":"#2c4c4d","on-error":"#ffffff","on-tertiary-fixed-variant":"#1e4e50","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","on-background":"#0d1c2e","on-secondary-fixed-variant":"#5d4123","on-error-container":"#93000a","on-primary-fixed":"#002021","primary-fixed-dim":"#abcdce","error":"#ba1a1a","inverse-primary":"#abcdce","secondary-fixed-dim":"#e8bf98","on-surface":"#0d1c2e","on-secondary-fixed":"#2c1600","tertiary-fixed-dim":"#a0cfd1","surface-container-highest":"#d5e3fc","outline-variant":"#c1c8c8","surface-container":"#e6eeff","on-surface-variant":"#414848","surface":"#f8f9ff","inverse-surface":"#233144","surface-dim":"#ccdbf3","background":"#f8f9ff","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","secondary":"#785838","primary":"#00191a","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","secondary-fixed":"#ffdcbd","surface-variant":"#d5e3fc","surface-container-high":"#dce9ff","on-secondary-container":"#785939"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.5rem","space-xl":"2rem","space-sm":"0.5rem","margin-mobile":"1rem","margin":"2rem","space-md":"1rem","gutter-mobile":"1rem","gutter":"1.5rem"},"fontFamily":{"label-sm":["Inter"],"label-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"body-lg":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"title-lg":["Plus Jakarta Sans"]},"fontSize":{"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"title-sm":["15px",{"lineHeight":"20px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"title-lg":["18px",{"lineHeight":"24px","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-primary-container z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="px-space-md pt-space-lg pb-space-md border-b border-white/10"><div class="flex items-center gap-space-sm"><img alt="Hisham Islamic Center Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XEMvE53ziLIVFI5AMpemEML81Dw3RAnSTq8rc7b2Qi5UZVqDDHzkoD541e4RQ4t_gVkFCpLhw7HHLJISzJjT4qL3Agw84fCfUE78thGReeDvheJ1b-19AWayh6N7bXANc8gmLiOAy-Za8ESZ6pZIGR0X28VoPfLJdHUD7JTX_SWbkEi2OLoSgRh7C3tF0LVoqMrQ1ko5wNPXrtDnIY_Sl_qgObRTw7n3bUaHBtSesrdecummWYpzjEBA"/><div class="flex flex-col min-w-0"><span class="font-title-sm text-title-sm text-white truncate tracking-tight">Hisham Islamic Center</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider truncate">Madrasa Management</span></div></div></div><nav class="flex-1 px-space-sm py-space-md flex flex-col gap-1" data-active-classes="bg-secondary text-white font-title-sm rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="students" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">school</span><span class="font-body-md text-body-md">Students</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="attendance" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">event_available</span><span class="font-body-md text-body-md">Attendance</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="fees" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">payments</span><span class="font-body-md text-body-md">Fees</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="quran-and-islamic-learning" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">menu_book</span><span class="font-body-md text-body-md truncate">Qur'an &amp; Learning</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">analytics</span><span class="font-body-md text-body-md">Reports</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">notifications</span><span class="font-body-md text-body-md">Notifications</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-white/80 hover:bg-white/10 hover:text-white transition-colors group" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px] text-white/70 group-hover:text-white">settings</span><span class="font-body-md text-body-md">Settings</span></a></nav></div><div class="p-space-sm border-t border-white/10 flex flex-col gap-space-xs"><div class="px-space-sm py-space-xs bg-tertiary-container/50 rounded-lg flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span><span class="font-label-sm text-label-sm text-white/90 truncate">2024–2025 (Term 2)</span></div><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-white/70 hover:bg-error-container hover:text-on-error-container transition-colors" data-path="logout" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-body-sm text-body-sm font-medium">Sign Out</span></a></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest border-b border-outline-variant/40 z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm min-w-0"><span class="font-title-sm text-title-sm text-on-surface-variant">Madrasa Portal</span><span class="font-label-sm text-outline">/</span><span class="font-title-sm text-title-sm text-on-surface truncate">Academic Session</span></div><div class="flex-1 max-w-lg hidden md:flex items-center relative"><span class="material-symbols-outlined absolute left-3 text-outline text-[20px] pointer-events-none">search</span><input class="w-full h-[38px] pl-10 pr-space-md bg-surface text-on-surface font-body-sm text-body-sm rounded-lg border border-outline-variant/60 focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/15 transition-all" placeholder="Search students, parent phone, M-Pesa ref..." type="text"/></div><div class="flex items-center gap-space-md"><span class="hidden lg:inline-flex items-center px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary-container font-semibold">Term 2 Active</span><button class="relative p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="h-6 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm cursor-pointer hover:bg-surface-container-low p-1.5 rounded-lg transition-colors"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSJdwTqDnyvkJyptSiBQmdJFyzwXRoH6DBA7eaqTCAMQMkDy8ZcODea9Jge87OEu5Rt_qY-LhJXng2827TSau7-JONl4fKe-IQIpaLpOEoeV3TFIcAlGjOdPlReO44isn5o4A1_nTWYZJSppTnoDHmpth-abDUF9vXj5rBssSQodJeoN-BrHmbDrqmaDKRkiInMJHFYQCVtjEwT0vSX6wyz998iS_2hcu78Yk0t7RKefSjiPq3VwGe"/><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Ustadh Abdulrahman</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Chief Administrator</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></header><main class="w-full pt-16 bg-surface"><div class="max-w-7xl mx-auto p-space-lg lg:p-space-xl"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Banner / Title & Statistical Overview -->
+<div class="relative overflow-hidden rounded-xl bg-primary-container text-on-primary p-space-lg lg:p-space-xl shadow-md">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-72 h-72 rounded-full bg-tertiary-fixed/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary/25 text-secondary-fixed text-label-sm font-label-sm uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse"></span>
+            Tahfidh &amp; Academic Registry
+          </span>
+<span class="text-on-primary-container text-label-sm font-label-sm">Session 1446 AH / Term 2</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-primary tracking-tight">Qur'an &amp; Islamic Learning</h1>
+<p class="font-body-md text-body-md text-on-primary-container max-w-xl">
+          Tahfidh memorization tracking, Muraja'ah (revision) schedules, and classical Islamic Studies curriculum progress for verified student cohorts.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap self-start lg:self-center">
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/15 text-on-primary font-title-sm text-title-sm backdrop-blur-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span>Print Hifz Matrix</span>
+</button>
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-secondary text-on-secondary font-title-sm text-title-sm hover:bg-secondary/90 shadow-sm transition-all transform active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Log Daily Sabaq</span>
+</button>
+</div>
+</div>
+<!-- Quick Stats Grid -->
+<div class="mt-space-lg pt-space-md grid grid-cols-2 sm:grid-cols-4 gap-space-md bg-tertiary-container/60 rounded-lg p-space-md backdrop-blur-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-primary-container">Enrolled Tahfidh</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-primary font-bold">184</span>
+<span class="text-label-sm font-label-sm text-secondary-fixed">Active Circles</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-primary-container">Huffadh Graduated</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold">12</span>
+<span class="text-label-sm font-label-sm text-on-primary-container">Full Sanad</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-primary-container">Juz Memorized Total</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-primary font-bold">6,420</span>
+<span class="text-label-sm font-label-sm text-tertiary-fixed font-medium">+142 this mo.</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-primary-container">Average Daily Muraja'ah</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-primary font-bold">1.5 <span class="text-title-sm font-title-sm font-normal text-on-primary-container">Juz</span></span>
+<span class="text-label-sm font-label-sm text-secondary-fixed">88% Target</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Search, Filter & Tab Bar Controls -->
+<div class="flex flex-col gap-space-md">
+<!-- Halaqah / Class Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 bg-surface-container-low p-1.5 rounded-xl">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest font-title-sm text-title-sm text-primary shadow-sm whitespace-nowrap flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">menu_book</span>
+<span>Tahfidh (Full-time Memorization)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary-container font-bold">96</span>
+</button>
+<button class="px-space-md py-2 rounded-lg font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/60 transition-colors whitespace-nowrap flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">record_voice_over</span>
+<span>Farbar (Tajweed &amp; Part-time)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant font-medium">54</span>
+</button>
+<button class="px-space-md py-2 rounded-lg font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/60 transition-colors whitespace-nowrap flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>Women Section Halaqah</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant font-medium">34</span>
+</button>
+<button class="px-space-md py-2 rounded-lg font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/60 transition-colors whitespace-nowrap flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+<span>Individual Progress Matrix</span>
+</button>
+</div>
+<!-- Filter & Search Controls Strip -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-sm rounded-xl shadow-sm">
+<div class="flex items-center gap-space-sm flex-1 max-w-lg">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">search</span>
+<input class="w-full h-10 pl-9 pr-space-md bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-primary-container/20 transition-all placeholder:text-on-surface-variant/70" placeholder="Search student by name, student ID, or Surah..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-2 bg-surface-container-low px-space-sm py-1 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-outline">groups</span>
+<select class="bg-transparent font-title-sm text-body-sm text-on-surface border-none focus:outline-none cursor-pointer py-1 pr-2">
+<option value="all">All Halaqaat</option>
+<option selected="" value="omar">Halaqah Sheikh Omar</option>
+<option value="bilal">Halaqah Sheikh Bilal</option>
+<option value="zakariyya">Halaqah Sheikh Zakariyya</option>
+</select>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-space-sm py-1 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-outline">calendar_today</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Wed, 18 Oct 2024</span>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" title="Filter Settings" type="button">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Content Grid: 12-Column Responsive Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: 8 Columns -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg min-w-0">
+<!-- Daily Tracker Table Panel -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Top Header -->
+<div class="p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-container-low/60">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-7 bg-primary-container rounded-sm"></div>
+<div class="flex flex-col">
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold tracking-tight">Daily Sabaq &amp; Muraja'ah Tracker</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live recitation evaluation and teacher validations for morning session</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+              4 / 4 Tested Today
+            </span>
+</div>
+</div>
+<!-- Table View -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left text-on-surface font-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3 px-space-md font-semibold">Student &amp; Halaqah</th>
+<th class="py-3 px-space-sm font-semibold">Juz</th>
+<th class="py-3 px-space-sm font-semibold">Today's Sabaq</th>
+<th class="py-3 px-space-sm font-semibold">Sabqi</th>
+<th class="py-3 px-space-sm font-semibold">Manzil / Review</th>
+<th class="py-3 px-space-sm font-semibold">Tajweed Notes</th>
+<th class="py-3 px-space-md text-right font-semibold">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Student 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-container/10 text-primary-container flex items-center justify-center font-title-sm text-title-sm font-bold flex-shrink-0">
+                      BM
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold truncate group-hover:text-primary-container">Bilal Mohamed Amin</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                        Sheikh Omar Halaqah
+                      </span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="inline-flex flex-col">
+<span class="font-title-sm text-title-sm font-bold text-primary-container">Juz 18</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">Al-Anbiya</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Al-Kahf 1–25</span>
+<span class="inline-flex items-center w-fit px-2 py-0.5 rounded-full bg-surface-container-high text-primary-container font-label-sm text-label-sm font-bold">
+                      Mumtaz (100%)
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Al-Isra'</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Jayyid Jiddan</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex items-center gap-1 text-on-surface font-body-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-semibold">Juz 16</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[180px] line-clamp-2" title="Makharij on Dhad improved; continue consistent Ghunna count">
+                    Makharij on Ḍhād improved; continue Ghunna timing.
+                  </p>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed/50 text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                      Completed
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Ust. Omar (Signed)</span>
+</div>
+</td>
+</tr>
+<!-- Student 2 -->
+<tr class="bg-surface-container-low/20 hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container/60 text-secondary flex items-center justify-center font-title-sm text-title-sm font-bold flex-shrink-0">
+                      YT
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold truncate group-hover:text-primary-container">Yusuf Tariq Mansoor</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                        Sheikh Zakariyya Halaqah
+                      </span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="inline-flex flex-col">
+<span class="font-title-sm text-title-sm font-bold text-primary-container">Juz 27</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">Adh-Dhariyat</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Al-Hadid 1–15</span>
+<span class="inline-flex items-center w-fit px-2 py-0.5 rounded-full bg-surface-container-high text-primary-container font-label-sm text-label-sm font-bold">
+                      Jayyid (85%)
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Al-Waqi'ah</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Mumtaz</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex items-center gap-1 text-on-surface font-body-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-semibold">Juz 25</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[180px] line-clamp-2" title="Watch Madd Munfasil length in transition from Ayah 8 to 9">
+                    Watch Madd Munfaṣil length in transitions.
+                  </p>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed/50 text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                      Completed
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Ust. Zakariyya</span>
+</div>
+</td>
+</tr>
+<!-- Student 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-title-sm text-title-sm font-bold flex-shrink-0">
+                      IH
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold truncate group-hover:text-primary-container">Ibrahim Hassan Noor</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                        Sheikh Bilal Halaqah
+                      </span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="inline-flex flex-col">
+<span class="font-title-sm text-title-sm font-bold text-primary-container">Juz 9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">Al-A'raf</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Al-A'raf 50–70</span>
+<span class="inline-flex items-center w-fit px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+                      Reciting...
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Al-An'am end</span>
+<span class="font-label-sm text-label-sm text-outline">Pending</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">schedule</span>
+<span>Juz 7</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[180px] line-clamp-2">
+                    Current session active. Focusing on Qalqalah sughra.
+                  </p>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                      In Progress
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Ust. Bilal (Active)</span>
+</div>
+</td>
+</tr>
+<!-- Student 4 -->
+<tr class="bg-surface-container-low/20 hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-error-container/60 text-error flex items-center justify-center font-title-sm text-title-sm font-bold flex-shrink-0">
+                      HK
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold truncate group-hover:text-primary-container">Hamza Khalid</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                        Sheikh Omar Halaqah
+                      </span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="inline-flex flex-col">
+<span class="font-title-sm text-title-sm font-bold text-primary-container">Juz 3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">Tilka-r-Rusul</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Al-Baqarah 250–265</span>
+<span class="inline-flex items-center w-fit px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+                      Mutaraddid (Needs Rep.)
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Ayat al-Kursi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Jayyid</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm">
+<span class="material-symbols-outlined text-error text-[16px]">sync_problem</span>
+<span class="font-semibold text-error">Juz 1 &amp; 2</span>
+</div>
+</td>
+<td class="py-3.5 px-space-sm">
+<p class="font-body-sm text-body-sm text-error max-w-[180px] line-clamp-2">
+                    Struggled with mutashabihat in Ayah 259. Needs re-sitting.
+                  </p>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                      Revision Needed
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Ust. Omar (Re-test 4PM)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Quick Footer -->
+<div class="p-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<span>Showing 4 active student logs in Halaqah Sheikh Omar</span>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm disabled:opacity-50">Prev</button>
+<span class="px-2 font-label-md text-label-md text-on-surface font-bold">1</span>
+<button class="px-3 py-1 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm">Next</button>
+</div>
+</div>
+</div>
+<!-- Memorization Analytics & Interactive Juz Mastery Matrix Overview -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Cohort Juz Memorization Distribution</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Breakdown of 184 full-time and part-time students across the 30 Ajza'</p>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-1 bg-surface-container-high rounded-full font-semibold text-primary">Target: 22 Huffadh by Shawwal</span>
+</div>
+<!-- Inline SVG Visualization: Student Density Across 30 Juz -->
+<div class="w-full bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>Juz 1–10 (Beginner Tahfidh)</span>
+<span>Juz 11–20 (Intermediate)</span>
+<span>Juz 21–30 (Advanced / Khatm Prep)</span>
+</div>
+<div class="relative w-full h-8 flex gap-1 rounded-md overflow-hidden p-0.5 bg-surface-container">
+<div class="bg-primary-container h-full rounded-sm flex items-center justify-center text-on-primary text-label-sm font-label-sm font-bold" style="width: 48%;" title="88 Students in Juz 1-10">
+              88 Students (48%)
+            </div>
+<div class="bg-surface-tint h-full rounded-sm flex items-center justify-center text-on-primary text-label-sm font-label-sm font-bold" style="width: 32%;" title="59 Students in Juz 11-20">
+              59 (32%)
+            </div>
+<div class="bg-secondary h-full rounded-sm flex items-center justify-center text-on-secondary text-label-sm font-label-sm font-bold" style="width: 20%;" title="37 Students in Juz 21-30">
+              37 (20%)
+            </div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant pt-1">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-primary-container"></span>
+<span>Foundational Halaqaat</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-surface-tint"></span>
+<span>Mid-Tier Muraja'ah Circles</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-secondary"></span>
+<span>Sanad Candidates</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Banner for Hifz Test Scheduling -->
+<div class="flex items-center justify-between bg-primary-container/5 rounded-lg p-space-md">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[24px]">verified_user</span>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface font-semibold">Weekly Formal Sanad Examination</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Next board review with Sheikh Bilal &amp; External Muqri scheduled for Saturday at 08:30 AM.</p>
+</div>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-title-sm text-title-sm hover:bg-tertiary-container transition-colors whitespace-nowrap" type="button">
+            View Schedule
+          </button>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: 4 Columns -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg min-w-0">
+<!-- 1. Student Spotlight / Memorization Milestones (Celebratory Gold Ribbon Card) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-md flex flex-col">
+<!-- Gold Ribbon Accent Header -->
+<div class="bg-secondary text-on-secondary px-space-md py-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+<span class="font-title-sm text-title-sm font-bold uppercase tracking-wider">Recent Khatm al-Qur'an</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/20 px-2 py-0.5 rounded-full font-bold">MUBARAK!</span>
+</div>
+<!-- Spotlight Content Body -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0 shadow-md">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a smiling young African Muslim student wearing a crisp white kanzu and embroidered kufi cap, gentle warm morning classroom light, subtle teal and warm beige background, proud and studious expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ4eIFzKiZjWs5u9TaSC1IYVSYfeesng9efu9mnvCP55I0zHtLcRNdai2FKSd1Pp4sO5n8p5GDIn3-aKNI7CfeuLmRsX7bGbFHZpe0MaxMHVb8JZGQnDUfMneghK7ZqXcKFHQlsCOP7KTTTIWEIpGlgJroP7W4ThrtMx173UxOPFp24qyxMGt8hK6hCnEhNfYIcqJo6IpngRqO9T-WtL_05o0MAZ3qAedveatvM0lYEmGZpqOaPGi4"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-lg text-title-lg font-bold text-on-surface leading-snug truncate">Abdulkadir Warsame</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Class of Ustadh Omar · Age 16</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Completed 30 Juz on 12 Oct 2024</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface">
+<span class="font-semibold">Sanad &amp; Ijazah Track:</span>
+<span class="text-secondary font-bold">Hafs 'an 'Asim</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface">
+<span class="text-on-surface-variant">Ceremony Date:</span>
+<span class="font-medium">Term 2 Convocation (Nov 24)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface">
+<span class="text-on-surface-variant">Total Duration:</span>
+<span class="font-medium">3 Years, 4 Months</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-title-sm text-title-sm transition-colors text-center" type="button">
+              View Student Dossier
+            </button>
+<button class="px-space-md py-2 rounded-lg bg-secondary text-on-secondary hover:bg-secondary/90 font-title-sm text-title-sm shadow-sm transition-colors flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">card_giftcard</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 2. Islamic Studies Curriculum & Modules -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">auto_stories</span>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Curriculum Modules</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Term 2 Progress</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Module 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Aqeedah &amp; Tawheed</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">Kitab at-Tawheed (Sh. Muhammad b. Abdil-Wahhab)</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold px-2 py-0.5 rounded bg-surface-container-highest text-primary">Class Farbar</span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-1">
+<span>Chapter 14: Shirk &amp; Means to It</span>
+<span class="font-semibold text-on-surface">72% covered</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 72%;"></div>
+</div>
+</div>
+<!-- Module 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Fiqh: Taharah &amp; Salah</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">Bulugh al-Maram / Bidayat al-Salik</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed">All Classes</span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-1">
+<span>Rukoo', Sujood &amp; Sujood as-Sahw</span>
+<span class="font-semibold text-on-surface">88% covered</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+<!-- Module 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Hadith Studies</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">40 Hadith an-Nawawi (Selected Memorization)</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold px-2 py-0.5 rounded bg-surface-container-highest text-primary">Intermediate</span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-1">
+<span>Current: Hadith 14 ('La Yahillu Damu Imri-in...')</span>
+<span class="font-semibold text-on-surface">35% covered</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 35%;"></div>
+</div>
+</div>
+<!-- Module 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Arabic Grammar &amp; Lughah</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">Matn al-Ajrumiyyah &amp; Durus al-Lughah</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold px-2 py-0.5 rounded bg-surface-container-highest text-primary">Level 2</span>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-1">
+<span>Bab al-I'rab &amp; Al-Af'al</span>
+<span class="font-semibold text-on-surface">60% covered</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 60%;"></div>
+</div>
+</div>
+</div>
+<button class="w-full py-2 rounded-lg bg-surface-container font-title-sm text-title-sm text-primary hover:bg-surface-container-high transition-colors text-center" type="button">
+          Manage Syllabus &amp; Exams
+        </button>
+</div>
+<!-- 3. Authentic Hadith & Wisdom Widget -->
+<div class="relative overflow-hidden rounded-xl bg-tertiary-container text-on-tertiary p-space-lg shadow-md flex flex-col gap-space-md">
+<!-- Subtle Pattern Backdrop Overlay -->
+<div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-secondary/10 blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">format_quote</span>
+<span class="font-label-md text-label-md text-secondary-fixed uppercase tracking-wider font-bold">Words of the Prophet ﷺ</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container">Tahfidh Adab</span>
+</div>
+<!-- Arabic Calligraphy Block -->
+<div class="p-space-md rounded-lg bg-tertiary/60 backdrop-blur-sm text-right">
+<p class="text-xl leading-relaxed text-secondary-fixed font-serif tracking-wide" dir="rtl" style="font-family: 'Amiri', 'Traditional Arabic', serif;">
+            «مَنْ قَرَأَ حَرْفًا مِنْ كِتَابِ اللَّهِ فَلَهُ بِهِ حَسَنَةٌ، وَالحَسَنَةُ بِعَشْرِ أَمْثَالِهَا»
+          </p>
+</div>
+<!-- English Translation -->
+<blockquote class="font-body-md text-body-md text-white/90 italic leading-relaxed">
+          “Whoever recites a letter from the Book of Allah will have a reward for it, and the reward will be multiplied by ten. I do not say that Alif-Lam-Meem is a letter, rather Alif is a letter, Lam is a letter, and Meem is a letter.”
+        </blockquote>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-tertiary-container pt-1">
+<span>Jami' at-Tirmidhi 2910</span>
+<span class="font-semibold text-secondary-fixed">Sahih (Al-Albani)</span>
+</div>
+</div>
+</div>
+</div>
+</div></div></main></div></body></html>
