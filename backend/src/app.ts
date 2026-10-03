@@ -19,7 +19,17 @@ export function createApp() {
   app.use(cookieParser());
   app.use(
     cors({
-      origin: env.CLIENT_URL,
+      origin(origin, callback) {
+        if (!origin) {
+          callback(null, true);
+          return;
+        }
+        if (origin === env.CLIENT_URL) {
+          callback(null, true);
+          return;
+        }
+        callback(null, false);
+      },
       credentials: true,
     }),
   );

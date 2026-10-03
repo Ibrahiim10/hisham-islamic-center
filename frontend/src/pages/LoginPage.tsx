@@ -5,6 +5,7 @@ import { Button } from '../components/ui/Button';
 import { FormField, Input } from '../components/ui/FormControls';
 import { MaterialIcon } from '../components/ui/MaterialIcon';
 import { HishamLogo } from '../components/brand/HishamLogo';
+import { adminPath } from '../constants/adminPaths';
 import { BRAND } from '../constants/brand';
 import { useAuth } from '../context/AuthContext';
 import { getAuthErrorMessage } from '../services/auth.service';
@@ -17,7 +18,7 @@ export function LoginPage() {
   const { isAuthenticated, isLoading, login } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-  const redirectTarget = (location.state as LoginLocationState | null)?.from ?? '/';
+  const redirectTarget = (location.state as LoginLocationState | null)?.from ?? adminPath();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');

@@ -63,7 +63,7 @@ export function StudentProfileQuranSection({ studentId }: { studentId: string })
       <SectionCard
         title="Learning history"
         action={
-          <Link to="/quran-learning" className="font-label-md text-label-md font-semibold text-brand-secondary hover:text-primary-container">
+          <Link to="/admin/quran-learning" className="font-label-md text-label-md font-semibold text-brand-secondary hover:text-primary-container">
             Open Qur&apos;an module
           </Link>
         }

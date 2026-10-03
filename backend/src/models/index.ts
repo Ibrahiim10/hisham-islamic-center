@@ -8,8 +8,12 @@ export { NotificationModel } from './Notification.model.js';
 export { IslamicContentModel } from './IslamicContent.model.js';
 export { QuranLearningRecordModel } from './QuranLearningRecord.model.js';
 export { QuranLessonRecordModel } from './QuranLessonRecord.model.js';
+export { AdmissionApplicationModel } from './AdmissionApplication.model.js';
+export { ContactInquiryModel } from './ContactInquiry.model.js';
 
+import { AdmissionApplicationModel } from './AdmissionApplication.model.js';
 import { AttendanceModel } from './Attendance.model.js';
+import { ContactInquiryModel } from './ContactInquiry.model.js';
 import { ClassModel } from './Class.model.js';
 import { FeeStructureModel } from './FeeStructure.model.js';
 import { IslamicContentModel } from './IslamicContent.model.js';
@@ -22,6 +26,8 @@ import { UserModel } from './User.model.js';
 
 const allModels = [
   UserModel,
+  AdmissionApplicationModel,
+  ContactInquiryModel,
   ClassModel,
   FeeStructureModel,
   StudentModel,

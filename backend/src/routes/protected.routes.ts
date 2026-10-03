@@ -2,6 +2,7 @@ import type { Request, Response } from 'express';
 import { Router } from 'express';
 import { requireAuth } from '../middleware/requireAuth.js';
 import { requireRole } from '../middleware/requireRole.js';
+import { adminsRouter } from './admins.routes.js';
 import { dashboardRouter } from './dashboard.routes.js';
 import { feesRouter } from './fees.routes.js';
 import { quranRouter } from './quran.routes.js';
@@ -21,6 +22,7 @@ export const protectedApiRouter = Router();
 protectedApiRouter.use(requireAuth);
 protectedApiRouter.use(requireRole(UserRole.ADMIN));
 
+protectedApiRouter.use('/admins', adminsRouter);
 protectedApiRouter.use('/students', studentsRouter);
 protectedApiRouter.use('/dashboard', dashboardRouter);
 protectedApiRouter.use('/fees', feesRouter);

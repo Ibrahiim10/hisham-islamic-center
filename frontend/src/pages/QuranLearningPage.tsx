@@ -257,7 +257,7 @@ export function QuranLearningPage() {
               >
                 <p className="font-title-sm text-title-sm text-on-surface">{student.name}</p>
                 <p className="font-label-sm text-label-sm text-on-surface-variant">{student.className}</p>
-                <Link to={`/students/${student.id}`} className="mt-1 inline-block font-label-sm text-label-sm text-brand-secondary hover:underline" onClick={(event) => event.stopPropagation()}>
+                <Link to={`/admin/students/${student.id}`} className="mt-1 inline-block font-label-sm text-label-sm text-brand-secondary hover:underline" onClick={(event) => event.stopPropagation()}>
                   View profile
                 </Link>
               </button>

@@ -6,14 +6,14 @@ import { MaterialIcon } from '../ui/MaterialIcon';
 import { SearchInput } from '../ui/SearchInput';
 
 const pageTitles: Record<string, string> = {
-  '/': 'Dashboard Overview',
-  '/students': 'Students Directory',
-  '/attendance': 'Daily Attendance',
-  '/fees': 'Fees & Collections',
-  '/quran-learning': "Qur'an & Islamic Learning",
-  '/reports': 'Institutional Reports',
-  '/notifications': 'Parent Notifications',
-  '/settings': 'Institution Settings',
+  '/admin': 'Dashboard Overview',
+  '/admin/students': 'Students Directory',
+  '/admin/attendance': 'Daily Attendance',
+  '/admin/fees': 'Fees & Collections',
+  '/admin/quran-learning': "Qur'an & Islamic Learning",
+  '/admin/reports': 'Institutional Reports',
+  '/admin/notifications': 'Parent Notifications',
+  '/admin/settings': 'Institution Settings',
 };
 
 export function AppHeader() {

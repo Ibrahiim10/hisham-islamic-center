@@ -55,6 +55,12 @@ describe('auth API', () => {
     expect(setCookieValues.some((value) => value.includes(env.AUTH_COOKIE_NAME))).toBe(true);
   });
 
+  it('stores bcrypt hash for seeded admin document', async () => {
+    const doc = await UserModel.findOne({ email: adminEmail }).select('+passwordHash');
+    expect(doc?.passwordHash).toMatch(/^\$2[ab]\$/);
+    expect(doc?.passwordHash).not.toBe(adminPassword);
+  });
+
   it('rejects invalid password', async () => {
     const response = await request(app)
       .post('/api/auth/login')

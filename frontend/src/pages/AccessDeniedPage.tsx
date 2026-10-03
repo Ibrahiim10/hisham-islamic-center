@@ -13,7 +13,7 @@ export function AccessDeniedPage() {
         <p className="mt-space-sm font-body-sm text-body-sm text-on-surface-variant">
           Your account does not have permission to use this administration portal.
         </p>
-        <Button type="button" className="mt-space-lg w-full justify-center" onClick={() => navigate('/login')}>
+        <Button type="button" className="mt-space-lg w-full justify-center" onClick={() => navigate('/admin/login')}>
           Return to login
         </Button>
       </div>

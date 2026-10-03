@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { adminPath } from '../constants/adminPaths';
 import { StudentProfileQuranSection } from '../components/quran/StudentProfileQuranSection';
 import { StudentFormModal } from '../components/students/StudentFormModal';
 import { Button } from '../components/ui/Button';
@@ -96,7 +97,7 @@ export function StudentProfilePage() {
       <div className="space-y-space-md">
         <PageHeader breadcrumbs={['Admin', 'Students', 'Profile']} title="Student Profile" />
         <EmptyState title="Student not found" description={error ?? 'This student record could not be loaded.'} icon="person_off" />
-        <Button variant="subtle" onClick={() => navigate('/students')}>
+        <Button variant="subtle" onClick={() => navigate(adminPath('students'))}>
           Back to Students
         </Button>
       </div>
@@ -111,7 +112,7 @@ export function StudentProfilePage() {
         badge={student.displayId}
         actions={
           <>
-            <Button variant="subtle" onClick={() => navigate('/students')}>
+            <Button variant="subtle" onClick={() => navigate(adminPath('students'))}>
               Back to Students
             </Button>
             <Button onClick={() => setEditOpen(true)}>Edit Student</Button>

@@ -71,7 +71,7 @@ export function SidebarNav({ onNavigate, className, forceExpanded = false }: Sid
   async function handleSignOut() {
     await logout();
     onNavigate?.();
-    navigate('/login', { replace: true });
+    navigate('/admin/login', { replace: true });
   }
 
   return (

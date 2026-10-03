@@ -6,6 +6,7 @@ import { StatCard } from '../components/ui/StatCard';
 import { Button } from '../components/ui/Button';
 import { EmptyState } from '../components/ui/EmptyState';
 import { LoadingState } from '../components/ui/LoadingState';
+import { adminPath } from '../constants/adminPaths';
 import { BRAND } from '../constants/brand';
 import { islamicMotivation } from '../data/mock';
 import { fetchDashboardOverview, getDashboardErrorMessage } from '../services/dashboard.service';
@@ -129,7 +130,7 @@ export function DashboardPage() {
             </span>
           </div>
           <h1 className="mt-1 font-headline-lg text-headline-lg tracking-tight text-on-surface">
-            Assalamu Alaykum,
+            Assalamu Alaykum, {adminName}
           </h1>
           <p className="mt-0.5 font-body-md text-body-md text-on-surface-variant">
             Here is what is happening at {BRAND.name} today{' '}
@@ -159,7 +160,7 @@ export function DashboardPage() {
           >
             Record M-Pesa Fee
           </Button>
-          <Link to="/students">
+          <Link to={adminPath('students')}>
             <Button leftIcon={<MaterialIcon name="person_add" className="text-[20px]" />}>+ Quick Admission</Button>
           </Link>
         </div>
@@ -427,7 +428,7 @@ export function DashboardPage() {
             )}
           </SectionCard>
 
-          <SectionCard eyebrow="Ledger Stream" title="Recent Fee Payments (M-Pesa / Bank)" action={<Link to="/fees" className="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-brand-secondary hover:text-primary-container">View All Ledger <MaterialIcon name="arrow_forward" className="text-[16px]" /></Link>} bodyClassName="overflow-x-auto">
+          <SectionCard eyebrow="Ledger Stream" title="Recent Fee Payments (M-Pesa / Bank)" action={<Link to={adminPath('fees')} className="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-brand-secondary hover:text-primary-container">View All Ledger <MaterialIcon name="arrow_forward" className="text-[16px]" /></Link>} bodyClassName="overflow-x-auto">
             {recentPayments.length === 0 ? (
               <div className="p-space-md">
                 <EmptyState title="No payments recorded yet" description="M-Pesa fee payments will appear here once recorded in the ledger." icon="payments" />

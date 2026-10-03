@@ -12,7 +12,7 @@ export function ProtectedRoute() {
   }
 
   if (!isAuthenticated) {
-    return <Navigate to="/login" replace state={{ from: location.pathname }} />;
+    return <Navigate to="/admin/login" replace state={{ from: location.pathname }} />;
   }
 
   if (currentUser?.role !== 'admin') {

@@ -9,6 +9,10 @@
     "start": "node dist/server.js",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "seed": "tsx src/scripts/seed.ts",
+    "bootstrap:admin": "tsx src/scripts/bootstrap-admin.ts",
+    "admin:bootstrap": "tsx src/scripts/admin-bootstrap.ts",
+    "verify:admin-login": "tsx src/scripts/verify-admin-login.ts",
+    "diagnose:admin": "tsx src/scripts/diagnose-dev-admin.ts",
     "test": "vitest run",
     "test:watch": "vitest"
   },

@@ -1,9 +1,9 @@
 /**
  * Development/demo seed only. Do not run in production.
  */
-import bcrypt from 'bcryptjs';
 import { connectDatabase, disconnectDatabase } from '../config/database.js';
 import { env } from '../config/env.js';
+import { ensureDevelopmentAdmin, resolveBootstrapAdminCredentials } from '../services/bootstrapAdmin.service.js';
 import {
   AttendanceModel,
   ClassModel,
@@ -58,8 +58,8 @@ function startOfDay(date: Date): Date {
 async function seed(): Promise<void> {
   assertDevelopmentEnvironment();
 
-  const adminEmail = env.SEED_ADMIN_EMAIL ?? 'admin@hisham.local';
-  const adminPassword = env.SEED_ADMIN_PASSWORD ?? 'ChangeMe123!';
+  const bootstrap = resolveBootstrapAdminCredentials();
+  const adminEmail = bootstrap.email;
 
   if (!env.SEED_ADMIN_EMAIL || !env.SEED_ADMIN_PASSWORD) {
     console.warn(
@@ -72,15 +72,23 @@ async function seed(): Promise<void> {
     await clearDevelopmentData();
   }
 
-  const passwordHash = await bcrypt.hash(adminPassword, 12);
-  const adminUser =
-    (await UserModel.findOne({ email: adminEmail })) ??
-    (await UserModel.create({
-      email: adminEmail,
-      passwordHash,
-      fullName: 'Development Admin',
-      role: UserRole.ADMIN,
-    }));
+  const adminBootstrap = await ensureDevelopmentAdmin({
+    email: bootstrap.email,
+    password: bootstrap.password,
+    fullName: bootstrap.fullName,
+    resetPasswordIfExists: bootstrap.resetPasswordIfExists || env.SEED_CLEAR === true,
+  });
+
+  if (adminBootstrap.skippedExisting) {
+    console.warn(
+      `Admin ${adminEmail} already exists; password hash unchanged. Run: SEED_ADMIN_RESET_PASSWORD=true npm run bootstrap:admin -w backend`,
+    );
+  }
+
+  const adminUser = await UserModel.findOne({ email: adminEmail });
+  if (!adminUser) {
+    throw new Error(`Failed to load admin user ${adminEmail} after bootstrap`);
+  }
 
   const classDefinitions = [
     { name: 'Tahfidh', amount: 8000 },

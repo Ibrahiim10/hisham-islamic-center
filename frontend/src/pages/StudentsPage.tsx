@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { adminPath } from '../constants/adminPaths';
 import { StudentFormModal } from '../components/students/StudentFormModal';
 import { Avatar } from '../components/ui/Avatar';
 import { Button } from '../components/ui/Button';
@@ -268,7 +269,7 @@ export function StudentsPage() {
                   <button
                     type="button"
                     className="flex w-full items-center gap-space-sm text-left"
-                    onClick={() => navigate(`/students/${row.id}`)}
+                    onClick={() => navigate(adminPath(`students/${row.id}`))}
                   >
                     <Avatar name={row.fullName} className="h-9 w-9 shrink-0 text-sm" />
                     <div className="min-w-0">
@@ -316,7 +317,7 @@ export function StudentsPage() {
                     <button
                       type="button"
                       className="rounded-lg px-2 py-1 font-label-sm text-label-sm text-primary-container hover:bg-surface-container-low"
-                      onClick={() => navigate(`/students/${row.id}`)}
+                      onClick={() => navigate(adminPath(`students/${row.id}`))}
                     >
                       View
                     </button>

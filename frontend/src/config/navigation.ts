@@ -1,3 +1,5 @@
+import { adminPath } from '../constants/adminPaths';
+
 export type NavItem = {
   to: string;
   label: string;
@@ -14,19 +16,19 @@ export const navSections: NavSection[] = [
   {
     label: 'MAIN',
     items: [
-      { to: '/', label: 'Dashboard', icon: 'dashboard', end: true },
-      { to: '/students', label: 'Students', icon: 'school' },
-      { to: '/attendance', label: 'Attendance', icon: 'event_available' },
-      { to: '/fees', label: 'Fees', icon: 'payments' },
-      { to: '/quran-learning', label: "Qur'an & Learning", icon: 'menu_book' },
-      { to: '/reports', label: 'Reports', icon: 'analytics' },
+      { to: adminPath(), label: 'Dashboard', icon: 'dashboard', end: true },
+      { to: adminPath('students'), label: 'Students', icon: 'school' },
+      { to: adminPath('attendance'), label: 'Attendance', icon: 'event_available' },
+      { to: adminPath('fees'), label: 'Fees', icon: 'payments' },
+      { to: adminPath('quran-learning'), label: "Qur'an & Learning", icon: 'menu_book' },
+      { to: adminPath('reports'), label: 'Reports', icon: 'analytics' },
     ],
   },
   {
     label: 'SYSTEM',
     items: [
-      { to: '/notifications', label: 'Notifications', icon: 'notifications' },
-      { to: '/settings', label: 'Settings', icon: 'settings' },
+      { to: adminPath('notifications'), label: 'Notifications', icon: 'notifications' },
+      { to: adminPath('settings'), label: 'Settings', icon: 'settings' },
     ],
   },
 ];
